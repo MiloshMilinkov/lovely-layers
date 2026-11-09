@@ -9,7 +9,7 @@ Demo website for a fictional cake bakery in Novi Sad, with a live cake builder. 
 - No photos: every cake is SVG drawn by `cake.js`.
 - Hosting: Cloudflare Workers static assets (`wrangler.jsonc`, assets dir `./site`, `404-page` handling).
 - Live: https://lovely-layers.milos300399.workers.dev
-- Repo: not on GitHub yet (planned: MiloshMilinkov/lovely-layers, public view-only like the siblings).
+- Repo: https://github.com/MiloshMilinkov/lovely-layers (public, view only)
 
 ## Commands
 
