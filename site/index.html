@@ -1,0 +1,334 @@
+<!doctype html>
+<!--
+  Lovely Layers (showcase site)
+  Copyright (c) 2026 Miloš Milinkov. All rights reserved.
+  Proprietary. See the LICENSE file.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovely Layers | Cakes made to order in Novi Sad</title>
+  <meta name="description" content="Lovely Layers is a small cake kitchen in Novi Sad. Choose the flavour, size and decorations, and we'll bake your cake fresh for the day.">
+  <meta name="theme-color" content="#d9eaf5">
+  <meta property="og:title" content="Lovely Layers">
+  <meta property="og:description" content="Cakes made for your people. Build yours in a minute.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..800;1,400&family=Shrikhand&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/cake.js" defer></script>
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="demo-bar">
+    <p>This is a demo website by Miloš Milinkov. Want one like it for your bakery or shop?
+      <a href="https://milos-milinkov.milos300399.workers.dev" rel="noopener">See my work and get in touch</a></p>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Lovely Layers, back to top">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M8 22 H40 V38 A16 4 0 0 1 8 38 Z" fill="#f6b3c6"/>
+          <path d="M8 27 H40 V30 H8 Z M8 33 H40 V35 H8 Z" fill="#c42a57"/>
+          <ellipse cx="24" cy="22" rx="16" ry="4" fill="#fffcf7"/>
+          <circle cx="24" cy="15" r="5" fill="#c42a57"/>
+          <path d="M24 10 q2 -4 5 -4" fill="none" stroke="#3d241d" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Lovely Layers</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#cakes">Our cakes</a></li>
+          <li><a href="#build">Build a cake</a></li>
+          <li><a href="#order">How ordering works</a></li>
+          <li><a href="#visit">Visit us</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small" href="#build">Order a cake</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1>Cakes made for your people.</h1>
+          <p class="lede">Lovely Layers is a small cake kitchen in Novi Sad. Pick a flavour, a size and the decorations, and we'll bake it fresh for your day.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#build">Build your cake</a>
+            <a class="btn btn-quiet" href="#cakes">See our favourites</a>
+          </div>
+          <ul class="hero-facts">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20v-6h12v6M8 14v-3h8v3M12 11V7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3c1.5 1.5 1.5 2.5 0 4c-1.5-1.5-1.5-2.5 0-4z" fill="currentColor"/></svg>
+              Cakes from 1 to 5 kg
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 10h16M9 3v4M15 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Order two days ahead
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="currentColor"/><circle cx="17" cy="17.5" r="1.8" fill="currentColor"/></svg>
+              Pickup or delivery in town
+            </li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <svg class="hero-badge" viewBox="0 0 360 360" aria-hidden="true">
+            <circle cx="180" cy="180" r="150" fill="#ffd56a" stroke="#ffd56a" stroke-width="30" stroke-dasharray="0 31.416" stroke-linecap="round"/>
+            <circle cx="180" cy="180" r="128" fill="none" stroke="#fffcf7" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+          </svg>
+          <div class="hero-cake" data-hero-cake role="img" aria-label="A two-tier pink strawberry cake with fresh berries, piped rosettes and three lit candles"></div>
+          <p class="hero-sticker">Baked the morning you pick it up</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favourite cakes -->
+    <section class="cakes scallop" id="cakes" aria-labelledby="cakes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="cakes-title">Our favourites</h2>
+          <p>The cakes people order again and again. Start from one and change anything you like.</p>
+        </div>
+        <ul class="cake-grid">
+          <li class="cake-card">
+            <div class="cake-card-art" data-preset-art="vera"></div>
+            <h3>Grandma Vera's chocolate</h3>
+            <p>Dark cocoa sponge with salted caramel, under a glossy ganache and a white chocolate drip.</p>
+            <p class="cake-card-price">2 kg from <strong data-preset-price="vera">8,600 RSD</strong></p>
+            <button class="btn btn-quiet btn-small" type="button" data-preset="vera">Start from this cake</button>
+          </li>
+          <li class="cake-card">
+            <div class="cake-card-art" data-preset-art="cloud"></div>
+            <h3>Strawberry cloud</h3>
+            <p>Vanilla sponge, strawberry jam and mascarpone cream. Pink, soft and loved by every six-year-old.</p>
+            <p class="cake-card-price">1.5 kg from <strong data-preset-price="cloud">6,100 RSD</strong></p>
+            <button class="btn btn-quiet btn-small" type="button" data-preset="cloud">Start from this cake</button>
+          </li>
+          <li class="cake-card">
+            <div class="cake-card-art" data-preset-art="garden"></div>
+            <h3>Pistachio garden</h3>
+            <p>Two tiers of pistachio sponge and raspberry, finished with macarons. Our wedding and christening favourite.</p>
+            <p class="cake-card-price">3 kg from <strong data-preset-price="garden">12,800 RSD</strong></p>
+            <button class="btn btn-quiet btn-small" type="button" data-preset="garden">Start from this cake</button>
+          </li>
+          <li class="cake-card">
+            <div class="cake-card-art" data-preset-art="sunny"></div>
+            <h3>Sunny birthday</h3>
+            <p>Lemon sponge with blueberry, rainbow sprinkles, candles and a name written on the front.</p>
+            <p class="cake-card-price">2 kg from <strong data-preset-price="sunny">7,600 RSD</strong></p>
+            <button class="btn btn-quiet btn-small" type="button" data-preset="sunny">Start from this cake</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cake builder -->
+    <section class="build" id="build" aria-labelledby="build-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="build-title" tabindex="-1">Build your cake</h2>
+          <p>Choose what goes inside, how big it is and how it looks. The picture changes as you go, and the price is an estimate we confirm when we call you.</p>
+        </div>
+
+        <div class="builder">
+          <div class="preview" id="cake-preview">
+            <div class="preview-stage">
+              <div class="preview-cake" data-preview role="img" aria-label="Your cake"></div>
+              <figure class="inside">
+                <div class="inside-art" data-inside></div>
+                <figcaption>Inside a slice</figcaption>
+              </figure>
+            </div>
+            <div class="summary" aria-live="polite">
+              <p class="summary-title" data-sum-title>Your cake</p>
+              <p class="summary-detail" data-sum-detail></p>
+              <p class="summary-price">About <strong data-sum-price></strong></p>
+            </div>
+            <div class="preview-actions">
+              <a class="btn btn-primary" href="#order">Order this cake</a>
+              <button class="btn btn-quiet" type="button" data-surprise>Surprise me</button>
+            </div>
+          </div>
+
+          <form class="controls" data-builder aria-label="Cake options">
+            <fieldset class="choice">
+              <legend>Flavour <span>What's inside: sponge and filling</span></legend>
+              <div class="options options-flavour" data-options="flavour"></div>
+              <p class="choice-note" data-flavour-note></p>
+            </fieldset>
+
+            <fieldset class="choice">
+              <legend>Size <span>Weight in kilos, and how many it feeds</span></legend>
+              <div class="options options-size" data-options="size"></div>
+            </fieldset>
+
+            <fieldset class="choice">
+              <legend>Frosting <span>The colour on the outside</span></legend>
+              <div class="options options-frosting" data-options="frosting"></div>
+            </fieldset>
+
+            <fieldset class="choice">
+              <legend>Decorations <span>Pick as many as you like</span></legend>
+              <div class="options options-deco" data-options="decorations"></div>
+            </fieldset>
+
+            <div class="choice">
+              <label class="choice-label" for="cake-message">Writing on the cake <span>Optional, up to 22 letters</span></label>
+              <input class="field" id="cake-message" name="message" type="text" maxlength="22" placeholder="Happy birthday, Mila" autocomplete="off">
+            </div>
+          </form>
+        </div>
+
+        <!-- Phones only: keeps the cake in view while scrolling through the options -->
+        <div class="mini-bar is-hidden" data-mini-bar>
+          <a class="mini-bar-art" href="#cake-preview" data-mini-art aria-label="Show the big picture of your cake"></a>
+          <p class="mini-bar-text"><strong data-mini-title></strong> <span>About <span data-mini-price></span></span></p>
+          <a class="btn btn-primary btn-small" href="#order">Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ordering -->
+    <section class="order scallop" id="order" aria-labelledby="order-title">
+      <div class="wrap order-inner">
+        <div class="order-how">
+          <h2 id="order-title">How ordering works</h2>
+          <ol class="how-steps">
+            <li>
+              <h3>Send us your cake</h3>
+              <p>Build it above or pick one of our favourites, then tell us the day you need it. We need two days for most cakes and a week for three tiers.</p>
+            </li>
+            <li>
+              <h3>We call you back</h3>
+              <p>Within a day, Dunja calls to go over the details, allergies and the final price. Nothing is baked until you say yes.</p>
+            </li>
+            <li>
+              <h3>Pick it up or we bring it</h3>
+              <p>Collect it from the shop in a sturdy box, or we deliver anywhere in Novi Sad for 500 RSD.</p>
+            </li>
+          </ol>
+          <p class="order-allergy">Gluten-free and egg-free sponges are possible for most flavours. Mention it in the notes and we'll talk it through.</p>
+        </div>
+
+        <div class="order-card">
+          <div class="order-cake">
+            <div class="order-cake-art" data-order-art></div>
+            <div>
+              <p class="order-cake-title" data-order-title>Your cake</p>
+              <p class="order-cake-text" data-order-text></p>
+              <a class="order-change" href="#build">Change the cake</a>
+            </div>
+          </div>
+
+          <form class="order-form" data-order-form novalidate>
+            <div class="field-row">
+              <label for="o-name">Your name</label>
+              <input class="field" id="o-name" name="name" type="text" autocomplete="name" required>
+              <p class="field-error" id="o-name-error" hidden>Please tell us your name.</p>
+            </div>
+            <div class="field-row">
+              <label for="o-phone">Phone number</label>
+              <input class="field" id="o-phone" name="phone" type="tel" autocomplete="tel" placeholder="06x xxx xxxx" required>
+              <p class="field-error" id="o-phone-error" hidden>We need a number to call you back.</p>
+            </div>
+            <div class="field-row">
+              <label for="o-day">When do you need it?</label>
+              <input class="field" id="o-day" name="day" type="date" required>
+              <p class="field-error" id="o-day-error" hidden>Pick a day at least two days from today.</p>
+            </div>
+            <fieldset class="field-row handover">
+              <legend>Pickup or delivery</legend>
+              <label class="pill"><input type="radio" name="handover" value="pickup" checked> <span>I'll pick it up</span></label>
+              <label class="pill"><input type="radio" name="handover" value="delivery"> <span>Deliver it (500 RSD)</span></label>
+            </fieldset>
+            <div class="field-row">
+              <label for="o-notes">Anything else? <span class="optional">Optional</span></label>
+              <textarea class="field" id="o-notes" name="notes" rows="3" placeholder="Allergies, a theme, the colour of the party balloons..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-wide" type="submit">Send cake request</button>
+          </form>
+
+          <div class="order-done" data-order-done tabindex="-1" hidden>
+            <h3 data-order-done-title>Thanks!</h3>
+            <p data-order-done-text></p>
+            <p class="demo-note">This is a demo site, so nothing was actually sent. On your own site, this request would go straight to your phone or inbox.</p>
+            <button class="btn btn-quiet" type="button" data-order-again>Plan another cake</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <h2 id="reviews-title">Said over a slice</h2>
+        <div class="review-list">
+          <blockquote>
+            <p>The pistachio cake for our wedding was gone in ten minutes. People still ask me where it came from.</p>
+            <footer>Teodora, wedding in June</footer>
+          </blockquote>
+          <blockquote>
+            <p>I asked for a dinosaur-green cake with candles at two days' notice. Dunja didn't even blink. My son talks about it every day.</p>
+            <footer>Nikola, fourth birthday</footer>
+          </blockquote>
+          <blockquote>
+            <p>Grandma Vera's chocolate tastes like the one my own grandmother made. That's the highest praise I have.</p>
+            <footer>Milica, regular since 2021</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="visit scallop" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-inner">
+        <div>
+          <h2 id="visit-title">Come say hello</h2>
+          <p class="lede">The shop has a glass counter of slices, a couple of tables and coffee from the roaster next door. Drop in for a piece, or to taste flavours before a big order.</p>
+          <p class="status" data-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Open Tuesday to Sunday</span></p>
+          <ul class="contact">
+            <li><strong>Address</strong> Pašićeva 21, Novi Sad</li>
+            <li><strong>Phone</strong> <a href="tel:+381605552847">060 555 2847</a></li>
+            <li><strong>Instagram</strong> @lovelylayers.ns</li>
+          </ul>
+        </div>
+        <div class="hours-card">
+          <h3>Opening hours</h3>
+          <table class="hours">
+            <tbody>
+              <tr data-days="1"><th scope="row">Monday</th><td>Closed, we bake for the week</td></tr>
+              <tr data-days="2,3,4,5" data-open="9" data-close="19"><th scope="row">Tuesday to Friday</th><td>09:00 to 19:00</td></tr>
+              <tr data-days="6" data-open="9" data-close="16"><th scope="row">Saturday</th><td>09:00 to 16:00</td></tr>
+              <tr data-days="0" data-open="10" data-close="14"><th scope="row">Sunday</th><td>10:00 to 14:00</td></tr>
+            </tbody>
+          </table>
+          <p class="hours-note">Cake pickups on Monday are fine by arrangement.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">Lovely Layers</p>
+      <p>Cake kitchen and shop, Pašićeva 21, Novi Sad</p>
+      <p class="credit">Lovely Layers is a made-up bakery. This demo site was designed and built by
+        <a href="https://milos-milinkov.milos300399.workers.dev" rel="noopener">Miloš Milinkov</a>, who makes websites for local businesses.
+        &copy; <span data-year>2026</span> Miloš Milinkov.</p>
+    </div>
+  </footer>
+</body>
+</html>
