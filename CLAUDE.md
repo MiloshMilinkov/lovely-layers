@@ -8,7 +8,8 @@ Demo website for a fictional cake bakery in Novi Sad, with a live cake builder. 
 - Fonts from Google Fonts: Shrikhand (h1/h2, prices, writing on the cake) and Nunito (everything else).
 - No photos: every cake is SVG drawn by `cake.js`.
 - Hosting: Cloudflare Workers static assets (`wrangler.jsonc`, assets dir `./site`, `404-page` handling).
-- Planned live URL: https://lovely-layers.milos300399.workers.dev (not deployed yet). Planned repo: MiloshMilinkov/lovely-layers.
+- Live: https://lovely-layers.milos300399.workers.dev
+- Repo: not on GitHub yet (planned: MiloshMilinkov/lovely-layers, public view-only like the siblings).
 
 ## Commands
 
@@ -17,6 +18,8 @@ npm install        # only dependency is wrangler
 npm run dev        # wrangler dev on http://127.0.0.1:8792 (also .claude/launch.json "site")
 npm run deploy     # wrangler deploy (wrangler is already logged in on this machine)
 ```
+
+A brand-new Worker can answer "error code: 1042" on workers.dev for a minute or two after the first deploy; it clears on its own.
 
 No tests, lint or typecheck. Verify changes in the browser at desktop and 375px mobile width (no horizontal scroll).
 
