@@ -5,6 +5,10 @@
 
 A showcase website for a made-up cake bakery in Novi Sad, built to show local businesses what their site could look like.
 
+**Live site:** https://lovely-layers.milos300399.workers.dev
+
+![Lovely Layers home page](docs/screenshot.jpg)
+
 ## What's on the page
 
 - Hero with an illustrated two-tier cake and flickering candles
