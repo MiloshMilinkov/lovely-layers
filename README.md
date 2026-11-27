@@ -32,6 +32,13 @@ npm run dev      # http://127.0.0.1:8792
 npm run deploy   # wrangler deploy, needs `wrangler login`
 ```
 
+## How it was built
+
+Built with [Claude Code](https://claude.com/claude-code) from my [showcase starter](https://github.com/MiloshMilinkov/claude-workflow/tree/main/starters/showcase-starter),
+with its own palette, fonts and layout. The project rules and commands are in
+[CLAUDE.md](CLAUDE.md), and the general workflow in
+[claude-workflow](https://github.com/MiloshMilinkov/claude-workflow).
+
 ## License
 
 Copyright © 2026 Miloš Milinkov. All rights reserved.
